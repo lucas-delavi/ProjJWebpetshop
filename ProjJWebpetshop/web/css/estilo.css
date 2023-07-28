@@ -1,4 +1,5 @@
 
+@charset "UTF-8";
 
 #container-login{
 	display: flex;	
@@ -8,6 +9,11 @@
 
 .page-header{
 	text-align: center;
+}
+
+#navbar{
+	padding-left: 42% ;
+	
 }
 
 #painel-home{
