@@ -17,6 +17,7 @@
    	src: url(../fonts/Vacaciones-font-ffp-defharo.ttf);
 }
 
+
 #container-login{
 	display: flex;	
 	justify-content: end;
@@ -37,28 +38,26 @@ h1{
 }
 
 h1 small{
-	color: #99cccc;
-}
-
-#container-navbar{
-	background-color: #ffe1f2;
+	color: #5bc0de;
 }
 
 #navbar{
 	padding-left: 42% ;
 	margin-bottom: 0%;
 	font-family: Vacaciones;
-	background-color:white ;
+	background-color:#ffeff2;
+	
 }
 
 #navbar ul li a{
-	color: #b8aeb8;
+	color: #d78fa3;
 
 }
 
 #jumbo-carousel{
 	padding: 0;
 	margin-bottom: 0;
+	background-color: white;
 }
 
 #painel-home{
@@ -66,21 +65,34 @@ h1 small{
 	align-items: center;
 	justify-content: space-between;
 	padding:10px;
+	font-family:Verdana ;
 }
 
 #painel-home .jumbotron{
 	border-radius: 10px;
+	padding: 10px;
 }
 
 #artigo-esquerdo{
 	margin-bottom: 0;
+	background-color: #ffeff2;
+}
+
+#artigo-esquerdo h2{
+	color:#5bc0de;
 }
 
 #artigo-direito{
 	margin-top: 30px;
+	background-color: #ffeff2;
+}
+
+#artigo-direito h2{
+	color:#5bc0de;
 }
 
 #dev-footer{
 	margin-bottom: 0;
 	text-align: center;
+	background-color: white;
 }
