@@ -1,6 +1,22 @@
 
 @charset "UTF-8";
 
+
+@font-face {
+   font-family: Animalpaw;
+   src: url(../fonts/AnimalPaw.ttf);   
+}
+
+@font-face{
+	font-family: Animalinsting;
+   	src: url(../fonts/AnimalInsting.ttf);
+}
+
+@font-face{
+	font-family: Vacaciones;
+   	src: url(../fonts/Vacaciones-font-ffp-defharo.ttf);
+}
+
 #container-login{
 	display: flex;	
 	justify-content: end;
@@ -9,11 +25,40 @@
 
 .page-header{
 	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-family: AnimalPaw;
+	font-size: 15vw;	
+}
+
+h1{
+	font-size: 5vw;
+	color: #d78fa3;
+}
+
+h1 small{
+	color: #99cccc;
+}
+
+#container-navbar{
+	background-color: #ffe1f2;
 }
 
 #navbar{
 	padding-left: 42% ;
-	
+	margin-bottom: 0%;
+	font-family: Vacaciones;
+	background-color:white ;
+}
+
+#navbar ul li a{
+	color: #b8aeb8;
+
+}
+
+#jumbo-carousel{
+	padding: 0;
+	margin-bottom: 0;
 }
 
 #painel-home{
@@ -25,4 +70,17 @@
 
 #painel-home .jumbotron{
 	border-radius: 10px;
+}
+
+#artigo-esquerdo{
+	margin-bottom: 0;
+}
+
+#artigo-direito{
+	margin-top: 30px;
+}
+
+#dev-footer{
+	margin-bottom: 0;
+	text-align: center;
 }
