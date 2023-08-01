@@ -1,4 +1,4 @@
-package br.edu.qi.Classes;
+package br.edu.qi.DTO;
 
 public class Servico {
 	private int idservico;

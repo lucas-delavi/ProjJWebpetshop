@@ -1,5 +1,5 @@
 
-package br.edu.qi.Classes;
+package br.edu.qi.DTO;
 
 public class Animal {
     private int idanimal;

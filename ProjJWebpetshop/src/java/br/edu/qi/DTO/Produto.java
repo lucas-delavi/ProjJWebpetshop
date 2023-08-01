@@ -1,5 +1,5 @@
 
-package br.edu.qi.Classes;
+package br.edu.qi.DTO;
 
 public class Produto {
     private int cod;
