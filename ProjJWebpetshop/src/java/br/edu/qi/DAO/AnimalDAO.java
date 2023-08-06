@@ -38,4 +38,37 @@ public class AnimalDAO {
         }
     }
     
+     public ArrayList<Animal> listarTodosAnimais() throws ClassNotFoundException{
+         
+            String sql = "SELECT * FROM tb_animal";
+            this.conexao = new ConexaoBD().getConexao();
+            
+            try {
+                
+                this.pstm = this.conexao.prepareStatement(sql);
+                this.resultado = this.pstm.executeQuery(sql);
+                
+                while(this.resultado.next()){
+                    
+                    Animal objAnimal = new Animal();
+                    
+                    objAnimal.setIdanimal(this.resultado.getInt("idanimal"));
+                    objAnimal.setNome(this.resultado.getString("nome"));
+                    objAnimal.setEspecie(this.resultado.getString("especie"));
+                    objAnimal.setRaca(this.resultado.getString("raca"));
+                    objAnimal.setPeso(this.resultado.getFloat("peso"));
+                    objAnimal.setSexo(this.resultado.getString("sexo"));
+                    objAnimal.setTutor(this.resultado.getString("tutor"));
+                    
+                    this.listaDeAnimais.add(objAnimal);
+                    
+                }
+                
+         } catch (Exception e) {
+             
+            JOptionPane.showMessageDialog(null,"Deu merda na classe AnimalDAO no metodo listarTodosAnimais()   ===> "+ e);
+             
+         }
+         return this.listaDeAnimais;
+     }
 }
