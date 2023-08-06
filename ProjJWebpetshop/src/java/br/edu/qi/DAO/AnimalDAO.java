@@ -64,7 +64,7 @@ public class AnimalDAO {
                     
                 }
                 
-         } catch (Exception e) {
+         } catch (SQLException e) {
              
             JOptionPane.showMessageDialog(null,"Deu merda na classe AnimalDAO no metodo listarTodosAnimais()   ===> "+ e);
              
