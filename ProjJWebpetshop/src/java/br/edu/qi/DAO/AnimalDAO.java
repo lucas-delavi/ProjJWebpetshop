@@ -71,4 +71,12 @@ public class AnimalDAO {
          }
          return this.listaDeAnimais;
      }
+     
+     public void alterarAnimal(Animal objAnimal){
+         
+     }
+     
+     public void excluirAnimal(Animal objAnimal){
+         
+     }
 }

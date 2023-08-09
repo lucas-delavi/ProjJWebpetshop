@@ -60,4 +60,12 @@ public class ServicoDAO {
         }
         return this.listaDeServicos;
     }
+    
+    public void alterarServico(Servico objServico){
+        
+    }
+    
+    public void excluirServico(Servico objServico){
+        
+    }
 }

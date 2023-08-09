@@ -61,4 +61,12 @@ public class ProdutoDAO {
         }
         return this.listaDeProdutos;
     }
+    
+    public void alterarProduto(Produto objProduto){
+        
+    }
+    
+    public void excluirProduto(Produto objProduto){
+        
+    }
 }

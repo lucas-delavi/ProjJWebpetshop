@@ -63,4 +63,12 @@ public class ClienteDAO {
         }               
         return this.listaDeClientes;
     }
+    
+    public void alterarCliente(Cliente objCliente){
+        
+    }
+    
+    public void excluirCliente(Cliente objCliente){
+        
+    }
 }

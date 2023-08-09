@@ -69,4 +69,12 @@ public class FuncionarioDAO {
                
         return this.listaDeFuncionarios;
     }
+    
+    public void alterarFuncionario(Funcionario objFuncionario){
+        
+    }
+    
+    public void excluirFuncionario(Funcionario objFuncionario){
+        
+    }
 }
