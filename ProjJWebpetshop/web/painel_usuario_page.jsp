@@ -104,27 +104,27 @@
                                         Nome: 
                                         <input type="text" name="txtNome">
                                     </label>
-
+                                    <br>
                                     <label>
                                         Espécie: 
                                         <input type="text" name="txtEspecie">
                                     </label>
-
+                                    <br>
                                     <label>
                                         Raça: 
                                         <input type="text" name="txtRaca">
                                     </label>
-                                    
+                                    <br>
                                     <label>
                                         Peso: 
                                         <input type="text" name="txtPeso">
                                     </label>
-                                    
+                                    <br>
                                     <label>
                                         Sexo: 
                                         <input type="text" name="txtSexo">
                                     </label>
-                                    
+                                    <br>
                                     <label>
                                         Tutor: 
                                         <input type="text" name="txtTutor">

@@ -7,14 +7,10 @@
    src: url(../fonts/AnimalPaw.ttf);   
 }
 
-@font-face{
-	font-family: Animalinsting;
-   	src: url(../fonts/AnimalInsting.ttf);
-}
 
 @font-face{
-	font-family: Vacaciones;
-   	src: url(../fonts/Vacaciones-font-ffp-defharo.ttf);
+	font-family: TommySoft;
+   	src: url(../fonts/TommySoft.otf);
 }
 
 
@@ -33,7 +29,7 @@
 }
 
 h1{
-	font-size: 5vw;
+	font-size: 8vmin;
 	color: #d78fa3;
 }
 
@@ -41,16 +37,10 @@ h1 small{
 	color: #5bc0de;
 }
 
-#navbar{	
-	margin-bottom: 0%;
-	font-family: Vacaciones;
-	background-color:#efab54;
-	
-}
-
 #navbar ul li a{
-	color: #d78fa3;
-
+    font-family: TommySoft;
+    font-size: 2vmin;
+    color: #5bc0de;
 }
 
 #jumbo-carousel{
@@ -64,17 +54,18 @@ h1 small{
 	align-items: center;
 	justify-content: space-between;
 	padding:10px;
-	font-family:Verdana ;
+	font-family:TommySoft ;
 }
 
 #painel-home .jumbotron{
 	border-radius: 10px;
 	padding: 10px;
+        background-color: #fde995;
 }
 
 #artigo-esquerdo{
 	margin-bottom: 0;
-	background-color: #efab54;
+	
 }
 
 #artigo-esquerdo h2{
@@ -83,7 +74,7 @@ h1 small{
 
 #artigo-direito{
 	margin-top: 30px;
-	background-color: #efab54;
+
 }
 
 #artigo-direito h2{
@@ -100,3 +91,60 @@ h1 small{
    ------------ PAINEL USUARIO PAGE -------------
 */
 
+
+.container {
+    
+}
+
+.btn {
+
+}
+
+.btn-info {
+
+}
+
+.navbar-btn {
+
+}
+
+form{
+    
+  
+}
+
+.navbar {
+    background-color: #fde995;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.navbar-default {
+
+}
+
+.nav {
+
+}
+
+.navbar-nav {
+    
+}
+
+.commonninja_component {
+
+}
+
+.btn-lg {
+
+}
+
+.well {
+
+}
+
+.well-sm {
+
+}
