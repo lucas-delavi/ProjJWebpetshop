@@ -41,11 +41,10 @@ h1 small{
 	color: #5bc0de;
 }
 
-#navbar{
-	padding-left: 42% ;
+#navbar{	
 	margin-bottom: 0%;
 	font-family: Vacaciones;
-	background-color:#ffeff2;
+	background-color:#efab54;
 	
 }
 
@@ -75,7 +74,7 @@ h1 small{
 
 #artigo-esquerdo{
 	margin-bottom: 0;
-	background-color: #ffeff2;
+	background-color: #efab54;
 }
 
 #artigo-esquerdo h2{
@@ -84,7 +83,7 @@ h1 small{
 
 #artigo-direito{
 	margin-top: 30px;
-	background-color: #ffeff2;
+	background-color: #efab54;
 }
 
 #artigo-direito h2{

@@ -30,8 +30,8 @@
                     <ul class="dropdown-menu">
                       <li><!-- Button trigger modal -->
 
-                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalAnimal">
-                          Launch demo modal
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
+                          Novo
                         </button>
                       
                       <li><a href="#">Listar</a></li>
@@ -42,7 +42,11 @@
                          Clientes <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Cadastrar</a></li>
+                      <li><!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
+                          Novo
+                        </button>
                       <li><a href="#">Listar</a></li>
                     </ul>
                 </div>
@@ -51,7 +55,11 @@
                          Serviços <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Cadastrar</a></li>
+                      <li><!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
+                          Novo
+                        </button>
                       <li><a href="#">Listar</a></li>
                     </ul>
                 </div>
@@ -60,7 +68,11 @@
                          Produtos <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Cadastrar</a></li>
+                      <li><!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
+                          Novo
+                        </button>
                       <li><a href="#">Listar</a></li>
                     </ul>
                 </div>
@@ -69,7 +81,11 @@
                          Funcionários <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Cadastrar</a></li>
+                      <li><!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
+                          Novo
+                        </button>
                       <li><a href="#">Listar</a></li>
                     </ul>
                 </div>
