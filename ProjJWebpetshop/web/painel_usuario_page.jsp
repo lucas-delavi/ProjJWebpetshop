@@ -44,33 +44,7 @@
                     <ul class="dropdown-menu">
                       <li><!-- Button trigger modal -->
 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
-                          Novo
-                        </button>
-                      <li><a href="#">Listar</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Serviços <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><!-- Button trigger modal -->
-
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
-                          Novo
-                        </button>
-                      <li><a href="#">Listar</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Produtos <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><!-- Button trigger modal -->
-
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCliente">
                           Novo
                         </button>
                       <li><a href="#">Listar</a></li>
@@ -83,12 +57,39 @@
                     <ul class="dropdown-menu">
                       <li><!-- Button trigger modal -->
 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAnimal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFuncionario">
                           Novo
                         </button>
                       <li><a href="#">Listar</a></li>
                     </ul>
                 </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Produtos <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduto">
+                          Novo
+                        </button>
+                      <li><a href="#">Listar</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Serviços <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServico">
+                          Novo
+                        </button>
+                      <li><a href="#">Listar</a></li>
+                    </ul>
+                </div>
+                
         </div>
                              
          <div class="modal fade" id="modalAnimal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -138,7 +139,177 @@
                               </div>
                             </div>
                           </div>
-                        </div>              
+                        </div>  
+
+                                 <div class="modal fade" id="modalCliente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Cadastro de cliente</h4>
+                              </div>
+                              <div class="modal-body">
+                                <form action="cadastrar_contato.jsp" method="POST"> 
+                                    <label>
+                                        Nome: 
+                                        <input type="text" name="txtNome">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        CPF: 
+                                        <input type="text" name="txtCpf">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Telefone: 
+                                        <input type="number" name="txtTelefone">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Endereço: 
+                                        <input type="text" name="txtEndereco">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Cidade: 
+                                        <input type="text" name="txtCidade">
+                                    </label>                                  
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary" type="submit" value="Cadastrar">Cadastrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+            
+                                 <div class="modal fade" id="modalFuncionario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Cadastro de funcionário</h4>
+                              </div>
+                              <div class="modal-body">
+                                <form action="cadastrar_contato.jsp" method="POST"> 
+                                    <label>
+                                        Nome: 
+                                        <input type="text" name="txtNome">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        CPF: 
+                                        <input type="text" name="txtCpf">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Telefone: 
+                                        <input type="text" name="txtTelefone">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Endereço: 
+                                        <input type="text" name="txtEndereco">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Cidade: 
+                                        <input type="text" name="txtCidade">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        E-mail: 
+                                        <input type="text" name="txtEmail">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Senha: 
+                                        <input type="text" name="txtSenha">
+                                    </label>
+
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary" type="submit" value="Cadastrar">Cadastrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+            
+                                 <div class="modal fade" id="modalProduto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Cadastro de produto</h4>
+                              </div>
+                              <div class="modal-body">
+                                <form action="cadastrar_contato.jsp" method="POST"> 
+                                    <label>
+                                        Nome: 
+                                        <input type="text" name="txtNome">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Preço: 
+                                        <input type="text" name="txtPreco">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Disponibilidade: 
+                                        <input type="text" name="txtDisponibilidade">
+                                    </label>
+                                    
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary" type="submit" value="Cadastrar">Cadastrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+            
+                                 <div class="modal fade" id="modalServico" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Cadastro de serviço</h4>
+                              </div>
+                              <div class="modal-body">
+                                <form action="cadastrar_contato.jsp" method="POST"> 
+                                    <label>
+                                        Nome: 
+                                        <input type="text" name="txtNome">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Preço: 
+                                        <input type="text" name="txtPreco">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Dia: 
+                                        <input type="text" name="txtDia">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        Horário: 
+                                        <input type="text" name="txtHorario">
+                                    </label>
+                                  
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary" type="submit" value="Cadastrar">Cadastrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
         </main>
         
         <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
