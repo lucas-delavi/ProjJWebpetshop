@@ -70,11 +70,74 @@ public class FuncionarioDAO {
         return this.listaDeFuncionarios;
     }
     
-    public void alterarFuncionario(Funcionario objFuncionario){
-        
+    public void alterarFuncionario(Funcionario objFuncionario) throws ClassNotFoundException{
+         String sql = "update tb_funcionario "
+                     + " set nome = ?, cpf = ?, telefone = ?, endereco = ?, cidade = ?, email = ?, senha = ?"
+                     + " where idfuncionario = ?";
+         this.conexao = new ConexaoBD().getConexao();
+         
+         try {
+             this.pstm = this.conexao.prepareStatement(sql);
+             this.pstm.setString(1, objFuncionario.getNome());
+             this.pstm.setString(2, objFuncionario.getCpf());
+             this.pstm.setLong(3, objFuncionario.getTelefone());
+             this.pstm.setString(4, objFuncionario.getEndereco());
+             this.pstm.setString(5, objFuncionario.getCidade());
+             this.pstm.setString(6, objFuncionario.getEmail());
+             this.pstm.setString(7, objFuncionario.getSenha());
+             
+             this.pstm.execute();
+             this.pstm.close();
+             
+         } catch (SQLException e) {
+             JOptionPane.showMessageDialog(null, "Deu merda na classe FuncionarioDAO no metodo alterarFuncionario() "+e);
+         }
+                 
+     }
+    
+    public void excluirFuncionario (Funcionario objFuncionario) throws ClassNotFoundException{
+         String sql = "delete from tb_funcionario where idfuncionario = ?";
+         this.conexao = new ConexaoBD().getConexao();
+         
+         try {
+             this.pstm = this.conexao.prepareStatement(sql);
+             this.pstm.setInt(1, objFuncionario.getIdfuncionario());
+             
+             this.pstm.execute();
+             this.pstm.close();
+             
+         } catch (SQLException e) {
+             JOptionPane.showMessageDialog(null, "Deu merda na classe FuncionarioDAO no metodo excluirFuncionario() "+e);
+         }
     }
     
-    public void excluirFuncionario(Funcionario objFuncionario){
+    public ArrayList<Funcionario> pesquisarFuncionarioPorNome(String nome) throws ClassNotFoundException {
+        String sql = "SELECT * FROM tb_funcionario where nome = ?";
+        this.conexao = new ConexaoBD().getConexao();
         
+        try {
+            this.pstm = this.conexao.prepareStatement(sql);
+            this.resultado = this.pstm.executeQuery(sql);
+            
+            while (this.resultado.next()) {
+                Funcionario objFuncionario = new Funcionario();
+                
+                objFuncionario.setIdfuncionario(this.resultado.getInt("idfuncionario"));
+                objFuncionario.setNome(this.resultado.getString("nome"));
+                objFuncionario.setCpf(this.resultado.getString("cpf"));
+                objFuncionario.setTelefone(this.resultado.getLong("telefone"));
+                objFuncionario.setEndereco(this.resultado.getString("endereco"));
+                objFuncionario.setCidade(this.resultado.getString("cidade"));
+                objFuncionario.setEmail(this.resultado.getString("email"));
+                objFuncionario.setSenha(this.resultado.getString("senha"));
+                
+                if (resultado.getString("nome").equalsIgnoreCase(nome)) {
+                    this.listaDeFuncionarios.add(objFuncionario);
+                }
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Deu merda na classe FuncionarioDAO no metodo pesquisarFuncionarioPorNome() " + e);
+        }
+        return this.listaDeFuncionarios;
     }
 }
