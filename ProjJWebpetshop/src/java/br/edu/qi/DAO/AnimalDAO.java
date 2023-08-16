@@ -34,7 +34,7 @@ public class AnimalDAO {
             pstm.close();
             
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "Deu merda na classe ContatoDAO no metodo cadastrarContato()   ===> "+e);
+            JOptionPane.showMessageDialog(null, "Deu merda na classe AnimalDAO no metodo cadastrarAnimal()   ===> "+e);
         }
     }
     

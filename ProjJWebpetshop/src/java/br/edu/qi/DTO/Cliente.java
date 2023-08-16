@@ -69,20 +69,5 @@ public class Cliente {
         this.cidade = cidade;
     }
     
-    public void cadastrarCliente(){
-        
-    }
-    
-    public String listarCliente(){
-        return "";
-    }
-    
-    public void alterarCliente(){
-        
-    }
-    
-    public void excluirCliente(){
-        
-    }
     
 }

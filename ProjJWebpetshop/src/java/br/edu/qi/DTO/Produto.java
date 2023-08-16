@@ -40,20 +40,4 @@ public class Produto {
     }
     
     
-    public void cadastrarProduto(){
-        
-    }
-    
-    public String listarProduto(){
-        return "";
-    }
-    
-    public void alterarProduto(){
-        
-    }
-    
-    public void excluirProduto(){
-        
-    }
-    
 }

@@ -65,21 +65,5 @@ public class Animal {
     public void setTutor(String tutor) {
         this.tutor = tutor;
     }
-    
-    public void cadastrarAnimal(){
-        
-    }
-    
-    public String listarAnimal(){
-        return "";
-    }
-    
-    public void alterarAnimal(){
-        
-    }
-    
-    public void excluirAnimal(){
-        
-    }
-    
+       
 }

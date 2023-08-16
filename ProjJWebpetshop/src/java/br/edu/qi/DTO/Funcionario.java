@@ -75,25 +75,5 @@ public class Funcionario {
         this.senha = senha;
     }
     
-    public void cadastrarFuncionario(){
-        
-    }
-    
-    public String listarFuncionario(){
-        return "";
-    }
-    
-    public void alterarFuncionario(){
-        
-    }
-    
-    public void excluirFuncionario(){
-        
-    }
-    
-    public void verificarLogin(){
-        
-    }
-    
-    
+   
 }
