@@ -10,8 +10,11 @@
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
+        <div class="form-page">
+        <div class="form-model">
         <h2>Cadastro de animal</h2>
         <form action="cadastrar_animal.jsp" method="POST"> 
+            
             <label>
                 Nome: 
                 <input class="form-control" type="text" name="txtNome">
@@ -29,7 +32,7 @@
             <br>
             <label>
                 Peso: 
-                <input class="form-control" type="number" name="txtPeso">
+                <input class="form-control" type="text" name="txtPeso">
             </label>
             <br>
             <label>
@@ -41,11 +44,14 @@
                 Tutor: 
                 <input class="form-control" type="text" name="txtTutor">
             </label>
-            <input type="submit" class="btn btn-success" value="Cadastrar">
-
+            <br>
+            <br>
+            <input type="submit" class="btn btn-success btn-lg" style="margin-left: 50px" value="Cadastrar">             
         </form>
-        <div class="container">
-            <a href="listar_animal_page.jsp"><button class="btn btn-info btn-lg" id="btn-cancelar">Cancelar</button></a>
+        <a href="painel_usuario_page.jsp"><button class="btn btn-danger btn-lg" style="margin-top: 10px">Cancelar</button></a>
+
+        
+        </div>
         </div>
     </body>
 </html>

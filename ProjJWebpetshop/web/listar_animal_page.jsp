@@ -18,7 +18,7 @@
             <a href="cadastrar_animal_page.jsp"><button  class="btn btn-success btn-lg">Novo animal</button></a>
             <a href="painel_usuario_page.jsp"><button  class="btn btn-danger btn-lg">Sair</button></a>        
         </header>
-        <<main>
+        <main>
             <%
                     AnimalDAO objAnimalDAO = new AnimalDAO();
 

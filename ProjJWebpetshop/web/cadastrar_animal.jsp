@@ -8,7 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <meta http-equiv="refresh" content="3; painel_usuario_page.jsp">
+        <meta http-equiv="refresh" content="0.001; painel_usuario_page.jsp">
     </head>
     <body>
         <%

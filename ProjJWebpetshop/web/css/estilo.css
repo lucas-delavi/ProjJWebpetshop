@@ -3,38 +3,45 @@
 
 
 @font-face {
-   font-family: Animalpaw;
-   src: url(../fonts/AnimalPaw.ttf);   
+    font-family: Animalpaw;
+    src: url(../fonts/AnimalPaw.ttf);
 }
 
 
 @font-face{
-	font-family: TommySoft;
-   	src: url(../fonts/TommySoft.otf);
+    font-family: TommySoft;
+    src: url(../fonts/TommySoft.otf);
 }
 
-
 #container-login{
-	display: flex;	
-	justify-content: end;
-	margin-right: 0;	
+    display: flex;
+    justify-content: end;
+    margin-right: 0;
 }
 
 .page-header{
-	text-align: center;
-	margin-bottom: 0;
-	margin-top: 0;
-	font-family: AnimalPaw;
-	font-size: 15vw;	
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: AnimalPaw;
+    font-size: 15vw;
 }
 
 h1{
-	font-size: 8vmin;
-	color: #d78fa3;
+    font-size: 8vmin;
+    color: #d78fa3;
 }
 
 h1 small{
-	color: #5bc0de;
+    color: #5bc0de;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fde995;
+    border-color: #fde995;
 }
 
 #navbar ul li a{
@@ -44,57 +51,93 @@ h1 small{
 }
 
 #jumbo-carousel{
-	padding: 0;
-	margin-bottom: 0;
-	background-color: white;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: white;
 }
 
 #painel-home{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding:10px;
-	font-family:TommySoft ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    font-family:TommySoft ;
 }
 
 #painel-home .jumbotron{
-	border-radius: 10px;
-	padding: 10px;
-        background-color: #fde995;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fde995;
 }
 
 #artigo-esquerdo{
-	margin-bottom: 0;
-	
+    margin-bottom: 0;
 }
 
 #artigo-esquerdo h2{
-	color:#5bc0de;
+    color:#5bc0de;
 }
 
 #artigo-direito{
-	margin-top: 30px;
-
+    margin-top: 30px;
 }
 
 #artigo-direito h2{
-	color:#5bc0de;
+    color:#5bc0de;
 }
 
 #dev-footer{
-	margin-bottom: 0;
-	text-align: center;
-	background-color: white;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: white;
+    font-family: Andale Mono, monospace;
 }
 
 /*
    ------------ PAINEL USUARIO PAGE -------------
 */
 
-.navbar {
-    background-color: #fde995;
-    display: flex;
-    justify-content: space-around;
-    
+#userpage{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
 }
 
+#container-userpage{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    border-style: outset;
+    border-color: #dfdfdf;
+}
+
+/*
+    ---------- FORMS ----------
+*/
+
+.form-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.form-model{
+    background-color: white;
+    border-radius: 10px;
+    border-style: outset;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}

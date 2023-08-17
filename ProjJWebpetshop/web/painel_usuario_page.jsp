@@ -16,16 +16,71 @@
     <body>
         <header>
             <div class="container" id="container-login">
-                <button type="button" class="btn btn-info navbar-btn">Sair</button>
+                <a href="index.html"><button type="button" class="btn btn-primary navbar-btn">Sair</button></a>
             </div>
 
             <div class="page-header">
                 <h1>Animania Pet Shop <small>Cuidando do seu pet</small></h1>
             </div>
         </header>
-        <main>                           
+        <main id="userpage">                           
+            
+            <article class="jumbotron" id="container-userpage">
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Animal <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="cadastrar_animal_page.jsp">Novo</a></li>
+                    <li><a href="listar_animal_page.jsp">Listar</a></li>
+                </ul>
+            </div>
 
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cliente <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="cadastrar_cliente_page.jsp">Novo</a></li>
+                    <li><a href="#">Listar</a></li>
+                </ul>
+            </div>
 
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Funcionário <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="cadastrar_funcionario_page.jsp">Novo</a></li>
+                    <li><a href="#">Listar</a></li>
+                </ul>
+            </div>
+
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Produto <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="cadastrar_produto_page.jsp">Novo</a></li>
+                    <li><a href="#">Listar</a></li>
+                </ul>
+            </div>
+
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Serviço <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="cadastrar_servico_page.jsp">Novo</a></li>
+                    <li><a href="#">Listar</a></li>
+                </ul>
+            </div>
+            </article>
 
         </main>                
         <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>

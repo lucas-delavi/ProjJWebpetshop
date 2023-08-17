@@ -11,32 +11,36 @@
         <link rel="stylesheet" href="css/estilo.css"> 
     </head>
     <body>
-        <h2>Cadastro de serviço</h2>
-        <form action="cadastrar_servico.jsp" method="POST"> 
-            <label>
-                Nome: 
-                <input type="text" name="txtNome">
-            </label>
-            <br>
-            <label>
-                Preço: 
-                <input type="text" name="txtPreco">
-            </label>
-            <br>
-            <label>
-                Dia: 
-                <input type="text" name="txtDia">
-            </label>
-            <br>
-            <label>
-                Horário: 
-                <input type="text" name="txtHorario">
-            </label>
-            <input type="submit" class="btn btn-success" value="Cadastrar">
+        <div class="form-page">
+            <div class="form-model">  
+                <h2>Cadastro de serviço</h2>
+                <form action="cadastrar_servico.jsp" method="POST"> 
+                    <label>
+                        Nome: 
+                        <input class="form-control" type="text" name="txtNome">
+                    </label>
+                    <br>
+                    <label>
+                        Preço: 
+                        <input class="form-control" type="text" name="txtPreco">
+                    </label>
+                    <br>
+                    <label>
+                        Dia: 
+                        <input class="form-control" type="text" name="txtDia">
+                    </label>
+                    <br>
+                    <label>
+                        Horário: 
+                        <input class="form-control" type="text" name="txtHorario">
+                    </label>
+                    <br>
+                    <br>
+                    <input type="submit" class="btn btn-success btn-lg" style="margin-left: 50px" value="Cadastrar">
 
-        </form>
-        <div class="container">
-            <a href="listar_servico_page.jsp"><button class="btn btn-info btn-lg" id="btn-cancelar">Cancelar</button></a>
+                </form>
+                <a href="painel_usuario_page.jsp"><button class="btn btn-danger btn-lg" style="margin-top: 10px">Cancelar</button></a>
+            </div>
         </div>
     </body>
 </html>
