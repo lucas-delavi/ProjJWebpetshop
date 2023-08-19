@@ -1,12 +1,10 @@
 package br.edu.qi.DTO;
 
-import java.util.Date;
-
 public class Servico {
 	private int idservico;
 	private String nome;
 	private float preco;
-	private Date dia;
+	private String dia;
 	private String horario;
 	
 	
@@ -34,11 +32,11 @@ public class Servico {
 		this.preco = preco;
 	}
 	
-	public Date getDia() {
+	public String getDia() {
 		return dia;
 	}
 	
-	public void setDia(Date dia) {
+	public void setDia(String dia) {
 		this.dia = dia;
 	}
 	

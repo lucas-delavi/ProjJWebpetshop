@@ -65,5 +65,9 @@ public class Animal {
     public void setTutor(String tutor) {
         this.tutor = tutor;
     }
-       
+     
+    @Override
+    public String toString(){
+        return "";
+    }
 }

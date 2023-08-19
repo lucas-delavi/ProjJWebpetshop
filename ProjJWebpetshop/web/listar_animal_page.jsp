@@ -1,5 +1,6 @@
 
 
+<%@page import="br.edu.qi.ConexaoBD.ConexaoBD"%>
 <%@page import="br.edu.qi.DTO.Animal"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="br.edu.qi.DAO.AnimalDAO"%>
@@ -19,40 +20,54 @@
             <a href="painel_usuario_page.jsp"><button  class="btn btn-danger btn-lg">Sair</button></a>        
         </header>
         <main>
-            <%
-                    AnimalDAO objAnimalDAO = new AnimalDAO();
+            <div class="container">
+                <h2>Consulta de animais</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nome</th>
+                            <th>Espécie</th>
+                            <th>Raça</th>
+                            <th>Peso</th>
+                            <th>Sexo</th>
+                            <th>Tutor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%
+                            AnimalDAO objAnimalDAO = new AnimalDAO();
+                            ArrayList<Animal> l = objAnimalDAO.listarTodosAnimais();
 
-                    ArrayList<Animal> l = objAnimalDAO.listarTodosAnimais();
+                            for (int i = 0; i < l.size(); i++) {
+                        %>
+                        <tr>
+                            <td><%=l.get(i).getIdanimal()%></td>
+                            <td><%=l.get(i).getNome()%></td>
+                            <td><%=l.get(i).getEspecie()%></td>
+                            <td><%=l.get(i).getRaca()%></td>
+                            <td><%=l.get(i).getPeso()%></td>
+                            <td><%=l.get(i).getSexo()%></td>
+                            <td><%=l.get(i).getTutor()%></td>
+                            <td>
+                                <form method="POST" action="alterar_animal_page.jsp">
+                                    <button class="btn btn-warning"
+                                            value="<%=l.get(i).getIdanimal()%>">
+                                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                    </button>
+                                        <a href="excluir_animal_page.jsp?"><button class="btn btn-danger"
+                                            value="<%=l.get(i).getIdanimal()%>">
+                                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    </button><a/>
+                                </form>
+                            </td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
 
-                    for (int i = 0; i < l.size(); i++) {
-                        out.print("<div class='container jumbotron'><p>Código: " + l.get(i).getIdanimal() + "</p>");
-                        out.print("<p>Nome: " + l.get(i).getNome() + "</p>");
-                        out.print("<p>Espécie: " + l.get(i).getEspecie()+ "</p>");
-                        out.print("<p>Raça: " + l.get(i).getRaca()+ "</p>");
-                        out.print("<p>Peso: " + l.get(i).getPeso()+ "</p>");
-                        out.print("<p>Sexo: " + l.get(i).getSexo()+ "</p>");
-                        out.print("<p>Tutor: " + l.get(i).getTutor()+ "</p><br>");
-
-                        out.print("<a href='excluir_contato_page.jsp?"
-                                + "codigo=" + l.get(i).getIdanimal()+ ""
-                                + "&nome=" + l.get(i).getNome() + ""
-                                + "&especie=" + l.get(i).getEspecie()+ ""
-                                + "&raca=" + l.get(i).getRaca()+ ""
-                                + "&peso=" + l.get(i).getPeso()+ ""
-                                + "&sexo=" + l.get(i).getSexo()+ ""
-                                + "&tutor=" + l.get(i).getTutor()+ "'><button class='btn btn-danger'>Excluir</button></a>"
-                                );
-
-                        out.print("<a href='alterar_contato_page.jsp?"
-                                + "codigo=" + l.get(i).getIdanimal()+ ""
-                                + "&nome=" + l.get(i).getNome() + ""
-                                + "&especie=" + l.get(i).getEspecie()+ ""
-                                + "&raca=" + l.get(i).getRaca()+ ""
-                                + "&peso=" + l.get(i).getPeso()+ ""
-                                + "&sexo=" + l.get(i).getSexo()+ ""
-                                + "&tutor=" + l.get(i).getTutor()+ "'><button class='btn btn-warning'>Alterar</button></a></div>"); 
-                    }
-                %>
+           
         </main>
     </body>
 </html>

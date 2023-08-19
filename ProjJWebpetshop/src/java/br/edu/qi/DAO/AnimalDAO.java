@@ -86,6 +86,7 @@ public class AnimalDAO {
              this.pstm.setFloat(4, objAnimal.getPeso());
              this.pstm.setString(5, objAnimal.getSexo());
              this.pstm.setString(6, objAnimal.getTutor());
+             this.pstm.setInt(7, objAnimal.getIdanimal());
              
              this.pstm.execute();
              this.pstm.close();
